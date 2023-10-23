@@ -1,0 +1,50 @@
+/* App.css */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.game-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.square {
+  background: #3498db;
+  border: 3px solid #555;
+  float: left;
+  font-size: 36px; /* Reduzi o tamanho da fonte para acomodar melhor */
+  font-weight: bold;
+  line-height: 100px;
+  height: 120px; /* Reduzi a altura para evitar problemas de layout */
+  width: 120px; /* Reduzi a largura para evitar problemas de layout */
+  margin-right: -3px;
+  margin-top: -3px;
+  padding: 0;
+  text-align: center;
+  color: #fff;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.status {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
